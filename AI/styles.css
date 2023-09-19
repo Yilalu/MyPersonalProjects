@@ -1,0 +1,47 @@
+body { 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    background-color: #f2f2f2; 
+}
+#chatbox { 
+    background-color: #fff; 
+    border-radius: 5px; 
+    padding: 20px; 
+    max-width: 600px; 
+    height: 400px; 
+    overflow-y: scroll; 
+    margin: 0 auto;
+}
+.message {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.user {
+    background-color: #e6f7ff;
+}
+.bot {
+    background-color: #d9d9d9;
+}
+#inputArea {
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#clearChat {
+    display: auto;
+    border-radius: 2px;
+    margin-left: 900px;
+    margin-right: 300px;
+    background-color:antiquewhite
+    back
+}
+@media screen and (max-width: 480px) {
+    .calculator button {
+     
+      height: 40px;
+      font-size: 20px;
+      margin: 4px;
+    }
+  }

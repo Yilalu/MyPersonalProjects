@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type = "text/css" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- Add the theme selector button -->
+    <button onclick="toggleThemeSelector()">ገጽታ</button>
+  
+      <div id="themeSelectorContainer" style="display: none;">
+        <select id="themeSelector" onchange="changeTheme()">
+          <option value="theme-light">ብርሃናማ</option>
+          <option value="theme-dark">ጥቁር</option>
+          <option value="theme-blue">ሰማያዊ</option>
+        </select>
+      </div>
+
+      <div class="input-container">
+        <div id="time"></div>
+        <h1 id = "ken">Loading...</h1>
+      </div>
+
+      <!-- These are all the calculator buttons-->
+      <input type="text" id="result" disabled>
+      <button onclick="clearResult()">አጥፋ</button>
+      <button onclick="appendValue('(')">(</button>
+      <button onclick="appendValue(')')">)</button>
+
+      <button onclick="appendValue('1')"><kbd>፩</kbd></button>
+      <button onclick="appendValue('2')">፪</button>
+      <button onclick="appendValue('3')">፫</button>
+      <button onclick="appendValue('4')">፬</button>
+      <button onclick="appendValue('5')">፭</button>
+      <button onclick="appendValue('6')">፮</button>
+      <button onclick="appendValue('7')">፯</button>
+      <button onclick="appendValue('8')">፰</button>
+      <button onclick="appendValue('9')">፱</button>
+      <button onclick="appendValue('*')">*</button>
+      
+      <button onclick="appendValue('/')">÷</button>
+      <button onclick="appendValue('-')">-</button>
+      <button onclick="appendValue('0')">፲</button>
+      <button onclick="appendValue('00')">፻</button>
+      <button onclick="appendValue('+')">+</button>
+      <button onclick="deleteValue()">ሰርዝ</button>
+      <button onclick="appendValue('.')">.</button>
+      
+      <button onclick="calculate()">=</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
